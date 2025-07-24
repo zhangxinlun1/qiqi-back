@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  # 后端服务
+  backend:
+    build:
+      context: ./meetting_room_booking_system_backend
+      dockerfile: Dockerfile
+    ports:
+      - "3333:3333"
+    environment:
+      - DB_HOST=localhost
+      - DB_PORT=3306
+      - DB_USERNAME=root
+      - DB_PASSWORD=woaini520.
+      - DB_DATABASE=meeting_room_booking_system
+      - PORT=3333
+      - NODE_ENV=development
+      - CORS_ORIGIN=http://localhost:5173
+    networks:
+      - app-network
+
+  # 前端服务
+  frontend:
+    build:
+      context: ./vue3-admin-dashboard
+      dockerfile: Dockerfile
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+# 网络配置
+networks:
+  app-network:
+    driver: bridge 
