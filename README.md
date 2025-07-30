@@ -6,7 +6,7 @@
 
 ```
 qiqi-back/
-├── meetting_room_booking_system_backend/  # 后端项目 (NestJS)
+├── apparel_admin_back/  # 后端项目 (NestJS)
 ├── vue3-admin-dashboard/                  # 前端项目 (Vue3 + Element Plus)
 ├── start-all.bat                         # Windows 启动脚本
 ├── start-all.sh                          # Linux/macOS 启动脚本
@@ -137,7 +137,7 @@ brew install redis
 
 #### 后端
 ```bash
-cd meetting_room_booking_system_backend
+cd apparel_admin_back
 npm install
 npm run start:dev
 ```

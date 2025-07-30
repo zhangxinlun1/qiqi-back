@@ -11,7 +11,7 @@ start "Frontend" cmd /k "yarn dev"
 cd ..
 
 echo [2/3] 启动后端服务...
-cd meetting_room_booking_system_backend
+cd apparel_admin_back
 start "Backend" cmd /k "yarn start:dev"
 cd ..
 

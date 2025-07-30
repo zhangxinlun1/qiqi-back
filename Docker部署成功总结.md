@@ -41,7 +41,7 @@
 ```
 qiqi-back/
 ├── docker-compose.yml          # Docker编排文件
-├── meetting_room_booking_system_backend/  # 后端项目
+├── apparel_admin_back/  # 后端项目
 │   ├── Dockerfile             # 后端Docker配置
 │   ├── src/                   # 源代码
 │   └── package.json           # 依赖配置

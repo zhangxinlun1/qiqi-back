@@ -7,7 +7,7 @@ echo.
 echo 正在配置环境变量文件...
 
 REM 配置后端环境变量
-cd meetting_room_booking_system_backend\src
+cd apparel_admin_back\src
 if exist .env (
     echo 后端.env文件已存在，跳过创建
 ) else (
@@ -43,7 +43,7 @@ echo ========================================
 echo.
 echo 请手动编辑以下文件并填入正确的配置：
 echo.
-echo 后端环境变量文件: meetting_room_booking_system_backend/src/.env
+echo 后端环境变量文件: apparel_admin_back/src/.env
 echo 前端环境变量文件: vue3-admin-dashboard/.env
 echo.
 echo 编辑命令：

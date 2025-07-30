@@ -39,9 +39,9 @@ echo.
 echo [2/5] 检查环境变量配置...
 
 :: 检查后端环境变量
-if not exist "meetting_room_booking_system_backend\src\.env" (
+if not exist "apparel_admin_back\src\.env" (
     echo ⚠️  后端环境变量文件不存在，正在创建...
-    copy "meetting_room_booking_system_backend\src\env.example" "meetting_room_booking_system_backend\src\.env" >nul 2>&1
+    copy "apparel_admin_back\src\env.example" "apparel_admin_back\src\.env" >nul 2>&1
     echo ✅ 后端环境变量文件创建完成
 ) else (
     echo ✅ 后端环境变量文件已存在

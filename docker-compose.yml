@@ -36,9 +36,12 @@ services:
   frontend:
     build:
       context: ./vue3-admin-dashboard  # 前端项目路径
-      dockerfile: Dockerfile            # 前端 Dockerfile
+      dockerfile: Dockerfile.simple     # 使用简化的Dockerfile
     ports:
-      - "5173:80"  # 宿主机5173端口映射到容器80端口
+      - "5173:5173"  # 宿主机5173端口映射到容器5173端口
+    volumes:
+      - ./vue3-admin-dashboard:/app  # 挂载本地代码到容器
+      - /app/node_modules  # 排除node_modules，使用容器内的
     depends_on:
       - backend
     networks:

@@ -65,7 +65,7 @@ echo.
 
 :: 安装后端依赖
 echo [5/7] 安装后端依赖...
-cd meetting_room_booking_system_backend
+cd apparel_admin_back
 if not exist node_modules (
     echo 正在安装后端依赖...
     npm install

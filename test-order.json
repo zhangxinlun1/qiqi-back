@@ -1,0 +1,19 @@
+{
+  "orderNumber": "TEST001",
+  "customerName": "测试客户",
+  "totalAmount": 100,
+  "profit": 20,
+  "status": "completed",
+  "items": [
+    {
+      "productId": 1,
+      "productName": "测试商品",
+      "productCode": "TEST001",
+      "quantity": 1,
+      "price": 100,
+      "costPrice": 80,
+      "subtotal": 100,
+      "profit": 20
+    }
+  ]
+} 

@@ -14,7 +14,7 @@ echo
 
 # 配置后端环境变量
 echo -e "${YELLOW}[1/3] 配置后端环境变量...${NC}"
-cd meetting_room_booking_system_backend/src
+cd apparel_admin_back/src
 
 if [ -f ".env" ]; then
     echo -e "${GREEN}✅ 后端环境变量文件已存在${NC}"
@@ -48,7 +48,7 @@ echo
 
 # 创建数据库
 echo -e "${YELLOW}[3/3] 创建数据库...${NC}"
-cd ../meetting_room_booking_system_backend/src
+cd ../apparel_admin_back/src
 echo "正在创建数据库..."
 
 mysql -u root -pwoaini520. -e "CREATE DATABASE IF NOT EXISTS meeting_room_booking_system CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;" 2>/dev/null
@@ -65,7 +65,7 @@ echo -e "🎉 环境变量配置完成！"
 echo -e "========================================${NC}"
 echo
 echo -e "${GREEN}📝 配置说明：${NC}"
-echo "   后端环境变量文件: meetting_room_booking_system_backend/src/.env"
+echo "   后端环境变量文件: apparel_admin_back/src/.env"
 echo "   前端环境变量文件: vue3-admin-dashboard/.env"
 echo
 echo -e "${GREEN}💡 提示：${NC}"

@@ -8,7 +8,7 @@
 
 ```
 项目根目录/
-├── meetting_room_booking_system_backend/
+├── apparel_admin_back/
 │   └── src/
 │       ├── .env                    # 后端环境变量文件 (需要手动创建)
 │       └── env.example             # 后端环境变量示例文件 (已提交到Git)
@@ -44,7 +44,7 @@ chmod +x setup-env-git.sh
 #### 后端环境变量
 ```bash
 # 进入后端目录
-cd meetting_room_booking_system_backend/src
+cd apparel_admin_back/src
 
 # 复制示例文件
 cp env.example .env
@@ -69,7 +69,7 @@ cp env.example .env
 
 ## ⚙️ 环境变量配置
 
-### 后端环境变量 (meetting_room_booking_system_backend/src/.env)
+### 后端环境变量 (apparel_admin_back/src/.env)
 
 ```bash
 # 数据库配置
@@ -164,7 +164,7 @@ chmod +x setup-env-git.sh
 3. **编辑环境变量**
 ```bash
 # 后端
-notepad meetting_room_booking_system_backend/src/.env
+notepad apparel_admin_back/src/.env
 
 # 前端
 notepad vue3-admin-dashboard/.env
@@ -204,7 +204,7 @@ start-all.bat  # Windows
 
 ```bash
 # 检查环境变量文件是否存在
-ls -la meetting_room_booking_system_backend/src/.env
+ls -la apparel_admin_back/src/.env
 ls -la vue3-admin-dashboard/.env
 
 # 检查环境变量是否加载

@@ -4,7 +4,7 @@ services:
   # 后端服务
   backend:
     build:
-      context: ./meetting_room_booking_system_backend
+      context: ./apparel_admin_back
       dockerfile: Dockerfile
     ports:
       - "3333:3333"

@@ -42,9 +42,9 @@ echo
 echo -e "${YELLOW}[2/5] 检查环境变量配置...${NC}"
 
 # 检查后端环境变量
-if [ ! -f "meetting_room_booking_system_backend/src/.env" ]; then
+if [ ! -f "apparel_admin_back/src/.env" ]; then
     echo -e "${YELLOW}⚠️  后端环境变量文件不存在，正在创建...${NC}"
-    cp meetting_room_booking_system_backend/src/env.example meetting_room_booking_system_backend/src/.env
+    cp apparel_admin_back/src/env.example apparel_admin_back/src/.env
     echo -e "${GREEN}✅ 后端环境变量文件创建完成${NC}"
 else
     echo -e "${GREEN}✅ 后端环境变量文件已存在${NC}"
